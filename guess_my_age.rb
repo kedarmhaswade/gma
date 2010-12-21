@@ -39,7 +39,7 @@ class GuessMyAge
       is.gets.chomp.downcase[0] == "y" ? response = 1 : response = 0
       age   += response*power
       power *= 2
-    #  os.puts "age so far = #{age}"
+      os.puts "age so far = #{age}" if $DEBUG
     end
     age
   end
