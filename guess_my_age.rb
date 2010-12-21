@@ -36,8 +36,8 @@ class GuessMyAge
       a = []
       grid(bit, a)
       display(a, 5, os)
-      is.gets.chomp.downcase[0] == "y" ? response = 1 : response = 0
-      age   += response*power
+      response = is.gets.chomp.downcase[0] == "y" ? 1 : 0
+      age += response*power
       power *= 2
     #  os.puts "age so far = #{age}"
     end
